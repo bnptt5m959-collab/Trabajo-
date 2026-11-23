@@ -1,0 +1,20 @@
+{
+  "numero": 10,
+  "id": "10-lata-con-etiqueta",
+  "nombre": "Lata de refresco con etiqueta",
+  "bueno_para": "Anuncios de producto premium (bebidas, cosmética, gadgets, envases): el producto cae al plató, se «viste» delante de la cámara, un macro enseña la textura y acaba en un plano de anuncio con la marca.",
+  "tema_de_muestra": "«Burbuja», un refresco inventado de limón y jengibre: la lata de aluminio cae y rebota, caen los hielos, un cabezal de luz imprime la etiqueta mientras gira, se empaña con gotas que resbalan, suben burbujas, caen rodajas de limón y cierra con la marca.",
+  "como_se_construye": {
+    "objetos": "Lata por revolución con perfil real (fondo abombado, cuello, borde enrollado y tapa rebajada), anilla extruida con agujero, tapa cepillada en círculos; etiqueta dibujada en canvas (2480×1024) con mapa de metal/rugosidad (tinta barnizada + franjas de aluminio desnudo) que se imprime con ctx.revelar; condensación con ctx.texturas.condensacion en la capa de barniz; gotas grandes instanciadas que resbalan; hielos irregulares con bisel; rodajas de limón con gajos dibujados; hojas de menta; burbujas, salpicadura y motas de bokeh.",
+    "luz": "Plató negro verdoso con fondo radial. ctx.luces.producto: caja de luz cálida a la izquierda, recortes ámbar y cian detrás (separan la lata del fondo), luz cenital y sombra suave; ctx.entornoEstudio con tiras verticales (las líneas de brillo del aluminio) y paneles de color; suelo espejo oscuro; sombras de contacto bajo lata y hielos; el cabezal de impresión es una luz práctica.",
+    "camara": "Cae con la lata (temblor en el golpe), orbita durante la impresión, macro de 25° con apertura 0,85 sobre las gotas (cambio de foco), grúa hacia atrás con las burbujas y empujón lento final con la lata en el tercio derecho y el titular a la izquierda.",
+    "materiales": "Aluminio pulido y cepillado, tinta con barniz y condensación (clearcoat con normal de gotitas), agua y burbujas con transmisión y brillo de borde, hielo esmerilado, limón translúcido, hoja con brillo de terciopelo.",
+    "ritmo": "Golpe a los 0,42 s; hielos 0,7-1,3 s; impresión 1,35-4,05 s (una vuelta exacta); vuelta rápida con desenfoque de movimiento a 4-5 s; empañado 4,25-5,6 s; gotas 4,5-6 s; burbujas desde 5,6 s; limón 6,6-7,5 s; titular a los 9,55 s.",
+    "postproceso": "ACES, bloom 0,4 (umbral 2,2), AO, DOF por claves, grano 0,04, viñeta 0,42, aberración 1, gradación sombras verde petróleo / luces ámbar."
+  },
+  "como_adaptarlo": "Otro producto: cambia el perfil del torno (botella, tarro, bote de crema), el dibujo de la etiqueta (dibujoEtiqueta) y la paleta de arriba; los recortes cálido/frío y el fondo radial del color de la marca. Mantén el giro de impresión (una vuelta exacta) y el macro. Para cosmética: sin hielo ni condensación, con pétalos o gotas de aceite.",
+  "mejor_tramo": [
+    3.6,
+    6.2
+  ]
+}

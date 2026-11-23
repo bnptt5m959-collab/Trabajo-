@@ -1,0 +1,17 @@
+{
+  "numero": 5,
+  "id": "05-datos-en-rascacielos",
+  "nombre": "Datos en rascacielos",
+  "bueno_para": "Enseñar cifras que crecen (usuarios, ventas, alumnos, facturación) como una ciudad que se construye de noche: cada dato es una torre de cristal que sale del suelo con su número contando encima, y el último es el héroe.",
+  "tema_de_muestra": "«De 1 a 10 millones»: cinco torres, una por año (2021 → hoy), en una plaza de una ciudad recién llovida a la hora azul. Cada torre sube con anticipación y rebote, enciende su corona de LED y su cifra cuenta; la de hoy es coral, con antena y baliza; la ciudad se enciende en ola y una grúa hacia atrás cierra con el titular.",
+  "como_se_construye": {
+    "objetos": "Torres = caja biselada con muro cortina dibujado (forjados y montantes) + capa de ventanas encendidas (emissiveMap con cortinas y alguna tele azul), aletas verticales instanciadas, remate, anillo de LED, aparatos en la azotea; la héroe con aletas coral, antena, baliza y helipuerto. Plaza de baldosas biselada, asfalto mojado con charcos (sueloEspejo), marcas viales, ~40 edificios de alrededor con ventanas y azoteas, skyline lejano con puntitos de luz, farolas, árboles con guirnaldas, estelas de coches (faros y pilotos instanciados), anillo de obra y chispas en la base de cada torre mientras sube, motas de bokeh.",
+    "luz": "Hora azul: luces.noche (luna fría con sombra) + recorte cálido desde el horizonte (lo que queda del atardecer) + entornoEstudio con un panel naranja bajo (reflejo cálido en el cristal) y tiras frías. Luces prácticas: farolas, coronas de LED (cian en las torres normales, coral en la héroe con su propia luz puntual), baliza roja, faros. Los charcos reflejan todo.",
+    "camara": "A ras de suelo mirando hacia arriba (las torres parecen enormes), recorrido continuo que sigue el foco de torre en torre (apertura 0,4-0,5) y grúa final hacia atrás y arriba para ver el skyline entero con la héroe en el tercio derecho y el titular a la izquierda. En vertical la cámara sigue la torre activa centrada y el titular va arriba.",
+    "materiales": "Cristal físico con barniz y algo de metal (refleja el entorno), aletas de aluminio y coral metalizado, baldosa brillante mojada, asfalto con relieve y charcos espejo, LED y bombillas en HDR.",
+    "ritmo": "Una torre cada ~0,85 s (0,15 · 0,95 · 1,8 · 2,7 · 3,7 s), cada una sube en 1,1 s (la héroe en 1,45 s) con anticipación y frenazo elástico mientras su cifra cuenta; 5,3 s rótulo «×8 en cinco años»; 5,4-6,6 s la ciudad se enciende en ola de izquierda a derecha; 8,2 s se quedan solo los 10 M; 8,6 s titular final.",
+    "postproceso": "ACES, bloom 0,55 (umbral 1,6), AO, DOF por claves, grano 0,04, viñeta 0,42, aberración 1, gradación sombras índigo / luces ámbar."
+  },
+  "como_adaptarlo": "Cambia la lista `datos` (año o etiqueta, valor, altura proporcional al valor, posición x, momento de salida, decimales; marca uno como `heroe`) y los titulares. Otra unidad: el `sufijo` de las cifras (' €', ' alumnos', ' %'). Más de 6 torres: júntalas (TAM más pequeño) y aleja la grúa final. De día: luces.exterior, ventanas apagadas y LED blancos.",
+  "mejor_tramo": [3.6, 6.0]
+}

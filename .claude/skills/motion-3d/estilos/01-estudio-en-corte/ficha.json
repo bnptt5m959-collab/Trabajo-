@@ -1,0 +1,20 @@
+{
+  "numero": 1,
+  "id": "01-estudio-en-corte",
+  "nombre": "Estudio de un creador en corte",
+  "bueno_para": "Enseñar un espacio de trabajo y su montaje paso a paso (estudio de grabación, oficina, cocina, taller): qué hay, dónde va cada cosa y en qué orden se prepara.",
+  "tema_de_muestra": "El estudio de un creador de vídeo, de noche: con solo la lámpara, la ventana y el monitor en reposo, se encienden por pasos la luz principal (con su haz y motas de polvo), el relleno, el contraluz de color (tira LED violeta y tubo cian), el neón «REC» de tubo y, al final, se graba: pantalla en directo, piloto rojo y el creador saluda.",
+  "como_se_construye": {
+    "objetos": "Habitación abierta como una casa de muñecas (suelo de tarima dibujada, paredes con textura y el corte de los muros a la vista), ventana con la ciudad de noche, paneles acústicos de tela biselados, estanterías con 34 libros instanciados, planta de hojas alargadas, póster, mesa de madera con monitor (interfaz dibujada en canvas), teclado con teclas, ratón, taza con vapor, lámpara, micro con brazo y filtro, silla gaming, cables por el suelo, cámara en trípode con objetivo de vidrio, dos cajas de luz con pie y un creador de plastilina con sudadera, pelo y cascos.",
+    "luz": "Empieza de noche: luz fría de luna por la ventana y la lámpara cálida (práctica). Cada paso enciende luz real con su objeto: foco principal con sombras y haz visible (niebla de planos aditivos) con motas, relleno frío, tira LED violeta y tubo cian de neón con sus luces de color, neón rojo de tubo que tartamudea al encenderse y piloto rojo de la cámara. Contraste cálido/frío y bloom en todo lo que brilla.",
+    "camara": "Un plano continuo: entra desde un tres cuartos alto, pasa por encima del hombro de la cámara del trípode (en primer término y desenfocada) con el foco en el creador, sube al neón con cambio de foco, vuelve al creador al grabar y sale en grúa para el plano final de «casa de muñecas» con el titular.",
+    "materiales": "Pintura mate con textura, tarima y madera, tela en paneles y alfombra, plástico negro brillante, metal en pies y brazo, cerámica en taza y macetas, vidrio en el objetivo, plastilina en el creador, neón y emisivos en HDR.",
+    "ritmo": "12 s: 1 s de noche y cinco pasos de ~1,6 s (1,0 · 2,6 · 4,2 · 5,8 · 7,4 s), cada uno con su rótulo fino numerado anclado a la luz que se enciende; el creador saluda a los 7,6 s; titular a los 9,6 s.",
+    "postproceso": "ACES, bloom 0,45 (umbral 1,7), AO, DOF por claves (0,25 → 0,7 en el hombro de la cámara), grano 0,04, viñeta 0,4, aberración 1, gradación sombras azules / luces cálidas."
+  },
+  "como_adaptarlo": "Cambia muebles y objetos del set por los de tu espacio y la lista de pasos (texto del rótulo + qué se enciende o aparece en cada uno, con su objeto de anclaje). La cámara debe quedarse en el lado abierto de la habitación (delante y a la derecha). En vertical, la escena acerca la cámara y fija los rótulos que no caben.",
+  "mejor_tramo": [
+    5.4,
+    7.6
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "numero": 9,
+  "id": "09-viaje-en-miniatura",
+  "nombre": "Viaje en miniatura",
+  "bueno_para": "Rutas, viajes, entregas, procesos en etapas y «del punto A al punto B»: cualquier recorrido contado con un vehículo de juguete por un paisaje de maqueta.",
+  "tema_de_muestra": "«El tren de la nieve»: al caer la tarde, una locomotora roja sale de un túnel con el faro encendido echando vapor, cruza un bosque nevado con las ventanas cálidas llenas de pasajeros, la cámara sube a vista de maqueta (valle, río helado, pueblo con chimeneas) y el tren cruza el puente de piedra reflejado en el hielo mientras nieva.",
+  "como_se_construye": {
+    "objetos": "Terreno de facetas con ruido de crestas (nieve en lo llano, roca en lo empinado) y zanja del río; río helado con grietas sobre suelo espejo; vía con balasto, raíles y traviesas biseladas instanciadas; túnel: colina nevada, boca de sillería extruida con arco, dovela, cartel «PICO NORTE» y faroles; puente de sillería con dos arcos, barandillas rojas y farolas; pueblo de 7 casas con ventanas encendidas, tejados nevados y chimeneas con humo (ctx.vapor) y farolas; 500 pinos instanciados en dos tonos con nieve (sin tapar a la cámara: se descartan los que cruzan su recorrido); tren de juguete con caldera con aros dorados, biela que gira, faro con haz y luz, cabina iluminada y vagones con ventanas encendidas y pasajeros dibujados, nieve en el techo y luz interior; vapor de bocanadas que se quedan en el mundo; nieve instanciada alrededor de la cámara.",
+    "luz": "Crepúsculo de invierno: sol bajo ámbar con sombra larga que sigue al tren + luna fría + cielo hemisférico azul; luces prácticas: faro de la locomotora, cabina, una luz cálida dentro de cada vagón, faroles del túnel, farolas del puente y del pueblo; entornoEstudio con horizonte cálido y cielo frío para los brillos del plástico.",
+    "camara": "Mezcla de rigs que siguen a la locomotora: frente a la boca del túnel (la locomotora sale hacia la cámara) → al lado del tren a la altura de las ventanas → vista de maqueta desde arriba y detrás (apertura 1,15 + franja nítida) → a ras del río helado aguas abajo, con el tren cruzando el puente y el pueblo detrás.",
+    "materiales": "Plástico brillante del tren y metal dorado, nieve mate facetada, piedra de sillería con textura, hielo translúcido con reflejo, madera de traviesas, ventanas emisivas.",
+    "ritmo": "La locomotora asoma del túnel a 0,3-0,6 s; velocidad constante con traqueteo y frena a la mitad entre 7,4 y 9,8 s para el plano final; rótulos: túnel 0,45-1,9 s, vagón restaurante 2,4-3,9 s, puente 4,6-6,9 s; titular a los 9 s.",
+    "postproceso": "ACES, bloom 0,45 (umbral 1,8), AO, DOF por rigs (0,45-1,15) con foco en el tren, maqueta solo en la vista alta, grano 0,04, viñeta 0,4, gradación sombras azules / luces ámbar, temperatura algo fría."
+  },
+  "como_adaptarlo": "Cambia el vehículo (camión, barco, autobús), los puntos de la vía, el paisaje (sin nieve y con otra paleta para desierto, pradera o costa; quita río y puente si no hacen falta), el pueblo de destino y los textos. Para un proceso en etapas, pon un rótulo numerado en cada punto de la vía (túnel, bosque, puente, pueblo).",
+  "mejor_tramo": [
+    0.0,
+    2.3
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "numero": 7,
+  "id": "07-maqueta-nocturna",
+  "nombre": "Maqueta nocturna",
+  "bueno_para": "Negocios locales, barrios, tiendas, cines, bares y restaurantes: enseñar un sitio como si fuera una maqueta viva de noche, recién llovida.",
+  "tema_de_muestra": "Cine de barrio en miniatura: rótulo «CINE» de neón que se enciende tartamudeando, marquesina con bombillas que se persiguen, carteles, cola de gente diminuta con paraguas, bar y farmacia con neón, coches con faros, lluvia y charcos que lo reflejan todo.",
+  "como_se_construye": {
+    "objetos": "Calles con aceras de baldosa y bordillo biselado, marcas viales y pasos de cebra; edificios con fachadas dibujadas (ladrillo, ventanas con cortinas, teles azules) y azoteas con aparatos, depósitos y antenas; el cine art déco con friso, puertas encendidas, vitrinas, marquesina con panel retroiluminado y bandera con neón de tubo (ctx.neonTexto); farolas con luz real; semáforo; guirnaldas de bombillitas; árboles; gente con piernas y paraguas; coches con faros, haz de luz y pilotos; lluvia instanciada y ondas en los charcos.",
+    "luz": "ctx.luces.noche (luna fría con sombra) + luces prácticas cálidas (farolas, marquesina, puerta, faros) + neón rosa, cian y verde que tiñen lo que tienen cerca. Asfalto mojado: ctx.texturas.asfalto con charcos + ctx.sueloEspejo (los charcos reflejan neón y bombillas).",
+    "camara": "Un plano continuo de grúa: vista de maqueta desde lo alto (apertura 1,15 + franja nítida de ctx.post.maqueta) que baja hasta la acera de enfrente mirando la marquesina; la franja se apaga al llegar abajo y queda un plano de cartel de cine con el titular en el tercio oscuro.",
+    "materiales": "Asfalto mojado con relieve, baldosa, fachadas con emisivo en las ventanas, coches de pintura brillante con barniz, metal oscuro en farolas y marquesina, neón de tubo y bombillas en HDR.",
+    "ritmo": "Neón que tartamudea 0,12-0,75 s; bombillas 8 pasos/s; lluvia constante; coches cruzando; semáforo verde → ámbar 4,2 s → rojo 5,4 s; la cola avanza a los 3,2 y 7,4 s y dos llegan corriendo; rótulos 4,4-9,2 s; titular a los 9,7 s.",
+    "postproceso": "ACES, bloom 0,5 (umbral 1,8), AO, DOF + maqueta animados, grano 0,045, viñeta 0,45, aberración 1,3, gradación sombras azul / luces ámbar, temperatura algo fría."
+  },
+  "como_adaptarlo": "Cambia el local protagonista: el texto del neón (neonTexto), el panel de la marquesina, los carteles (textura2d) y la cola (tienda nueva, concierto, panadería). Para otro barrio, la paleta y el tipo de fachada. Sin lluvia: quita lluvia y ondas y baja `mojado`. De día: luces.exterior, ventanas apagadas y sin neón.",
+  "mejor_tramo": [
+    8.6,
+    11.0
+  ]
+}

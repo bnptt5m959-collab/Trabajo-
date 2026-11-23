@@ -1,0 +1,5 @@
+# Se rehacen solos con motor/preparar.py en cada máquina
+.venv/
+motor/entorno.json
+.trabajo/
+__pycache__/

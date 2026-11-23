@@ -1,0 +1,20 @@
+{
+  "numero": 8,
+  "id": "08-circuito-nocturno",
+  "nombre": "Circuito nocturno",
+  "bueno_para": "Competencias, carreras, plazos y comparativas «quién llega antes»: cualquier tema con salida, velocidad y meta contado como un anuncio de juguetes de noche.",
+  "tema_de_muestra": "Gran Premio de juguete: semáforo que se pone rojo luz a luz, tres cochecitos de fórmula que salen echando chispas, sobrevuelo del circuito iluminado, persecución por la curva peraltada, cruce de meta con público saltando, confeti y fuegos, y el ganador con su vuelta rápida.",
+  "como_se_construye": {
+    "objetos": "Trazado cerrado (CatmullRomCurve3) con peralte calculado de la curvatura; pista de asfalto dibujado con trazada de gomas, pianos, zócalo y quitamiedos naranjas con TUBO DE NEÓN (ctx.neon) cian fuera y magenta dentro; pilares biselados; parrilla pintada, línea de cuadros y pórtico con semáforo de 5 luces y rótulo; gradas con 136 espectadores instanciados que saltan, techo con tira de luz y pantalla gigante; vallas publicitarias inventadas; boxes con puertas encendidas, logo «GP» pintado en la mesa, conos y pilas de neumáticos; cochecitos de fórmula con pontones, halo, casco, alerones, dorsal (ctx.pegatina), ruedas con llanta, faros con haz de luz y piloto trasero.",
+    "luz": "Noche: luna fría con sombra (luces.noche) + seis torres de focos con luz práctica real (PointLight) + faros de cada coche con luz propia + luz roja/verde del semáforo; entornoEstudio con tiras cian y magenta para que la pintura de los coches refleje el neón; mesa negra brillante con suelo espejo (refleja neón, faros y focos).",
+    "camara": "Plano continuo por mezcla de rigs que se mueven con los coches: detrás de la parrilla mirando al semáforo → a ras de pista junto al coche azul en la salida (desenfoque de movimiento) → sobrevuelo de maqueta (apertura 1 + franja nítida) → persecución detrás del último por la curva peraltada → tres cuartos delantero del ganador parado tras la meta, con gradas y fuegos detrás.",
+    "materiales": "Pintura de coche brillante con barniz, asfalto semimate, plástico de pianos y vallas, metal del pórtico y las torres, goma de neumáticos, neón de tubo y luces HDR.",
+    "ritmo": "Semáforo 0,25-1,25 s (una luz cada 0,2 s); verde a 1,45 s con chispas y el morro que se levanta; sobrevuelo 3-5 s; persecución con chispas 5,4-7,6 s; meta a 8,35 s (crono congelado «¡Vuelta rápida!»), confeti, público saltando y 5 fuegos artificiales; titular a 8,95 s.",
+    "postproceso": "ACES, bloom 0,4 (umbral 2), AO, DOF por rigs (0,3-1), maqueta solo en el sobrevuelo, grano 0,04, viñeta 0,42, aberración 1,2, gradación sombras azul / luces ámbar."
+  },
+  "como_adaptarlo": "Cambia los puntos del trazado, el número, color y dorsal de los coches, las marcas de las vallas, la pantalla y los textos (titular, crono, rótulos). Para comparar marcas o productos, pon su nombre en el dorsal y en un rótulo que siga a cada coche. De día: luces.exterior, sin neón y mesa clara.",
+  "mejor_tramo": [
+    5.5,
+    7.7
+  ]
+}

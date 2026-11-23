@@ -1,0 +1,16 @@
+{
+  "numero": 3,
+  "id": "03-boceto-a-objeto",
+  "nombre": "Cómo nace una guitarra eléctrica",
+  "bueno_para": "Enseñar cómo se diseña o se compone un objeto pieza a pieza, del boceto a la realidad: productos, instrumentos, inventos, «de la idea al prototipo».",
+  "tema_de_muestra": "Una guitarra eléctrica «Fénix»: de noche, bajo un flexo, el lápiz dibuja el boceto con guías azules; encima aparecen en 3D el cuerpo sunburst, el mástil, las pastillas y el puente, las cuerdas y los mandos con rótulos numerados; se levanta del papel, la cámara recorre las cuerdas en macro y cierra con un plano de anuncio.",
+  "como_se_construye": {
+    "objetos": "Papel técnico con grano y cuadrícula, boceto dibujado por código (guías azules + trazo doble con temblor) que se traza solo mientras un lápiz 3D sigue la punta; la guitarra sale de las MISMAS medidas (contorno suavizado y extruido con bisel, trastes por la regla de las 12 notas, 18 polos instanciados en las pastillas, puntos de nácar, logotipo en la pala). Mesa con densidad: flexo con bombilla, regla graduada, lápices, goma, virutas, taza con vapor.",
+    "luz": "Habitación a oscuras: el flexo es una luz práctica (SpotLight con sombra suave) que deja un charco cálido en el papel; luz fría de ventana y cielo azulado de relleno. Cuando la guitarra se levanta entran una caja de luz cálida y dos recortes (ámbar y cian) que la separan del fondo; entorno de estudio con una tira fría para la línea de brillo en la laca. Motas de bokeh al fondo.",
+    "camara": "Cenital con un pequeño giro mientras se dibuja, se inclina a tres cuartos mientras aparecen las capas, sigue a la guitarra cuando se pone de pie, macro a lo largo de las cuerdas con cambio de foco (pastillas → trastes) calculado en los ejes de la propia guitarra, y plano de anuncio con la guitarra en el tercio derecho.",
+    "materiales": "Laca sunburst (degradado radial con veta) con barniz que se pule al levantarse, golpeador negro, pastillas crema, arce y palosanto con textura de madera procedural, nácar iridiscente, cromo, papel, nogal, cerámica.",
+    "ritmo": "Boceto 0-1,55 s; capas con muelle y destello cálido a 1,75 / 2,3 / 2,85 / 3,4 (cuerdas que crecen del puente) / 3,95 s con su rótulo; se levanta 4,4-6 s; macro 6-8,6 s; titular a los 9,7 s mientras gira despacio sobre su eje largo."
+  },
+  "como_adaptarlo": "Cambia las listas de puntos de arriba (contorno, golpeador, pala…) y las capas con sus rótulos: el boceto y el 3D salen de los mismos datos. Para otro objeto (cafetera, patinete, silla) crea una capa por pieza con su material, conserva el flexo y la mesa con objetos, y calcula la macro con enPose() sobre la pieza clave.",
+  "mejor_tramo": [7.0, 9.3]
+}

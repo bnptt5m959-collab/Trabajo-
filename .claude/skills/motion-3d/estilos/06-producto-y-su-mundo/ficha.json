@@ -1,0 +1,20 @@
+{
+  "numero": 6,
+  "id": "06-producto-y-su-mundo",
+  "nombre": "Producto que explota en su mundo",
+  "bueno_para": "Presentar un producto contando de qué está hecho y para qué vive: cae al plató, se abre por capas con un rótulo por pieza, de dentro sale su mundo en órbita y se cierra de golpe en un plano de anuncio.",
+  "tema_de_muestra": "La zapatilla de correr «Ritmo»: cae girando al plató cobalto y se posa con un rebote; coge impulso y se abre en suela de goma, entresuela de espuma con gel, plantilla, empeine de malla y cordones; alrededor orbitan pista, gota de agua, rayo, hoja, cronómetro y medalla; todo se recoge y cierra con el titular.",
+  "como_se_construye": {
+    "objetos": "Zapatilla hecha con código por «lofts»: a lo largo del pie se calcula en cada punto una sección redondeada (superelipse) con su suelo, altura y anchura, así cada pieza se curva y se estrecha en puntera, talón y arriba. Suela de goma con balanceo (talón redondeado y puntera levantada) y tacos instanciados; entresuela de espuma más gruesa en el talón, con franja amarilla y ventanas de gel translúcido; plantilla con logo; empeine de malla de punto (textura con relieve y brillo de tela) con panel-rayo pespunteado, refuerzos de puntera y talón y nombre; contrafuerte brillante en cuña; boca del tobillo hundida con forro oscuro y cuello acolchado de terciopelo; tirador con nombre; lengüeta curva; ollaos de metal en dos filas y cordones cruzados de tubo con lazada. Mundo: 6 iconos con material propio (pista con calles, gota de agua con transmisión y brillo de borde, rayo emisivo, hoja de terciopelo, cronómetro con esfera dibujada y cristal, medalla de oro con estrella y cintas). Motas de bokeh y polvo al posarse.",
+    "luz": "Plató cobalto con fondo radial: luces.producto (caja de luz cálida, recortes naranja y cian detrás, luz cenital, sombra suave), entornoEstudio con tiras y paneles de color, suelo espejo azul oscuro con sombra de contacto.",
+    "camara": "Perfil héroe → se aleja y sube mientras las capas se separan → órbita al otro lado con los iconos → vuelve y se acerca al plano de anuncio con la zapatilla en el tercio derecho y el titular a la izquierda. En vertical, más cerca, titular arriba y rótulos en columna debajo.",
+    "materiales": "Malla de punto con brillo de tela (sheen), espuma con relieve, goma con textura, gel y agua con transmisión, plástico con barniz, metal pulido y dorado, terciopelo.",
+    "ritmo": "0-0,55 s cae girando (desenfoque de movimiento) y se posa con rebote y polvo; 0,35-1,9 s titular; 1,15-1,45 s anticipación; 1,45-2,8 s se abre de abajo arriba con rebote; 2,35-5,3 s un rótulo por capa; 2,8-3,9 s los iconos salen en órbita uno tras otro; 6,1-6,7 s se recogen; 6,55-7,3 s las capas se cierran de golpe (aplastamiento + polvo); 8 s titular final.",
+    "postproceso": "ACES, bloom 0,45 (umbral 1,8), AO, DOF por claves, grano 0,038, viñeta 0,4, aberración 0,9, gradación sombras cobalto / luces melocotón."
+  },
+  "como_adaptarlo": "Cada capa es una línea `capa(objeto, cuánto sube, giro)` con su rótulo en `rot`: cambia las piezas por las de tu producto (un móvil: cristal, pantalla, batería, placa, carcasa) y los 5-7 iconos de su mundo. Para otra forma, la función `loft` vale para casi todo lo alargado (calzado, ratón, mando, botella tumbada): cambia las tablas de altura y anchura (`altoEmp`, `anchoEmp`, `grosorEnt`). Fondo radial del color de la marca y recortes cálido/frío.",
+  "mejor_tramo": [
+    1.2,
+    3.4
+  ]
+}

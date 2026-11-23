@@ -1,0 +1,20 @@
+{
+  "numero": 2,
+  "id": "02-plano-a-food-truck",
+  "nombre": "Plano que se vuelve food truck",
+  "bueno_para": "Explicar cómo se diseña y se monta algo partiendo de su plano: negocios, locales, vehículos, stands, maquetas o cualquier producto que pasa del diseño a la realidad.",
+  "tema_de_muestra": "Un food truck: sobre una mesa de dibujo, una punta de luz traza el plano (planta, alzado y cotas) y de él se levantan el chasis y las ruedas, la carrocería, la persiana que sube con el interior encendido, el toldo de rayas con bombillas, el letrero de neón «LA PLANCHA», la pizarra del menú y los taburetes; al terminar cae el atardecer y se encienden todas las luces.",
+  "como_se_construye": {
+    "objetos": "Mesa de nogal con textura, papel con fibras, cerco de café y relieve, plano dibujado por código que se traza con una punta de luz y chispas; útiles alrededor (regla metálica con marcas, escuadra de acrílico con transmisión, lápiz, goma, taza con vapor, cinta de carrocero). Camión: carrocería biselada con barniz, molduras cromadas, 44 remaches, rejillas, faros con aro cromado, retrovisores, matrícula, ruedas con dibujo, radios y tapacubos, aparato de aire y chimenea con humo; ventana con interior dibujado y luz práctica, persiana de lamas, mostrador con salsas y campanilla; toldo de tela curvado con fleco y guirnalda de 11 bombillas; letrero de neón de tubo; pizarra de madera y dos taburetes.",
+    "luz": "Mesa con luz cálida de flexo desde arriba a la derecha y relleno frío; a los 4,4-6 s baja a atardecer (la principal al 32 %) y se encienden las prácticas: interior, bombillas una a una, neón que tartamudea y faros. Reflejos de estudio en pintura y cromo.",
+    "camara": "Cenital girando mientras se traza el plano, baja en curva a un tres cuartos mientras caen las piezas, se acerca a la ventana con poco foco, pasa al lado izquierdo y termina en plano de anuncio con el camión en los dos tercios derechos y el titular a la izquierda.",
+    "materiales": "Madera de nogal, papel mate con relieve, metal cepillado, acrílico transparente, pintura turquesa brillante con barniz, crema, cromo, goma, vidrio, lona de rayas con trama, madera en mostrador y pizarra, neón en HDR.",
+    "ritmo": "12 s: trazo 0,1-1,55 s; chasis y ruedas que caen botando 1,6-2,3 s; carrocería con rebote 2,05-2,85 s; persiana 3,1-3,7 s; toldo 3,5-4,1 s; letrero 4 s; pizarra y taburetes 4,35-4,7 s; atardecer 4,4-6 s; rótulos en dos tandas (5,8-7,6 y 7,9-9,3 s); titular a los 9,6 s.",
+    "postproceso": "ACES, bloom 0,45 (umbral 1,8), AO, DOF por claves, grano 0,04, viñeta 0,42, aberración 0,9, gradación sombras azul tinta / luces cálidas."
+  },
+  "como_adaptarlo": "Cambia los trazos del plano (rectángulos de la planta y del alzado) y las piezas 3D por las de tu objeto; conserva el orden «base → cuerpo → lo que se abre → detalles → luces → rótulos» y el paso a atardecer cuando se encienden las prácticas. El letrero acepta cualquier texto con tildes (neonTexto) y la pizarra se reescribe en su textura2d.",
+  "mejor_tramo": [
+    4.4,
+    6.6
+  ]
+}

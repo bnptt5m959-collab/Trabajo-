@@ -1,0 +1,17 @@
+{
+  "numero": 4,
+  "id": "04-vista-explotada",
+  "nombre": "Vista explotada",
+  "bueno_para": "Explicar cómo funciona un aparato o un producto por dentro: sus piezas, en qué orden trabajan y qué hace cada una, con acabado de anuncio de producto.",
+  "tema_de_muestra": "Una cámara de fotos por dentro: el objetivo con sus lentes, el diafragma de 9 láminas, el sensor sobre su placa, la batería, la tarjeta y la pantalla; se abre por ejes, se recorre de cerca, se vuelve a montar con un clic y dispara.",
+  "como_se_construye": {
+    "objetos": "Producto de 20-30 piezas agrupadas en 6 saltos (cuerpo fijo; arriba visor y diales; delante bayoneta, lentes, diafragma, anillo de enfoque, barril y lente frontal en fila; el sensor un poco adelante; abajo batería y tarjeta; atrás la pantalla). Cada pieza guarda su posición de montada (ctx.base) y un vector de salto. Detalle: tornillos y contactos instanciados, ojales, zapata, ocular, escala de distancias dibujada en el barril, placa verde con pistas de oro y chip iridiscente, pantalla con imagen en vivo y piloto que parpadea.",
+    "luz": "Plató cálido de arena con fondo radial y suelo de papel: ctx.luces.producto (caja de luz grande a la izquierda, recorte cálido y recorte frío detrás, luz cenital y sombra suave), ctx.entornoEstudio con una tira vertical que dibuja la línea de brillo en el aluminio y un panel frío detrás; sombra de contacto bajo el producto flotante y AO; motas de luz al fondo.",
+    "camara": "3/4 frontal que empuja mientras entra el producto, lateral para ver la fila de piezas, macro por el eje del objetivo con cambio de foco (lente frontal → diafragma → sensor), vuelta por detrás para la pantalla y la batería, y plano de anuncio en 3/4 con el producto en el tercio derecho.",
+    "materiales": "Cuero con relieve (texturas.ruido de grano fino como normal), aluminio cepillado anisótropo, goma y metal moleteados (normal map de estrías), anodizado negro con barniz, vidrio con transmisión y tratamiento iridiscente + brillo de borde, plástico naranja brillante de acento, oro en contactos.",
+    "ritmo": "Entra con muelle en 0 s; despiece escalonado con anticipación 0,9-3,3 s y líneas guía discontinuas; rótulos finos 3,1-8,2 s (dos fijos en pantalla en la macro); el diafragma se cierra y se abre en la macro; se vuelve a montar en orden inverso 7,9-9,2 s; disparo con destello a 9,45 s; titular de anuncio a los 9,9 s.",
+    "postproceso": "ACES, exposición 1,08, bloom suave (umbral 2), AO 1,15, DOF por claves (0,3 general, 0,8-0,85 macro), grano 0,035, viñeta 0,34, gradación sombras azul pizarra / luces crema."
+  },
+  "como_adaptarlo": "Cambia las piezas por las de tu producto manteniendo 4-6 grupos de salto en ejes claros (delante, arriba, abajo, atrás) y que cada pieza tenga su material. Reescribe los rótulos en el orden en que trabaja de verdad, deja la macro con cambio de foco en la pieza clave y un acento de color propio. Para plató oscuro: fondo radial oscuro + sueloEspejo y recortes más fuertes.",
+  "mejor_tramo": [4.3, 6.6]
+}
